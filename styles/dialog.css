@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'normal';
+    src: url('../fonts/SingleDay-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'afraid';
+    src: url('../fonts/HiMelody-Regular.ttf') format('truetype');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: #1a1a1a;
+}
+
+.desk{
+    left: 200px;
+    bottom: 0;
+    width: 10px;
+    height: 10px;
+    background-color: aliceblue;
+}
+.bag{
+    left: 800px;
+    bottom: 100px;
+    width: 10px;
+    height: 10px;
+    background-color: aquamarine;
+}
+.dialog{
+    visibility: hidden;
+}
+.player{
+    left: 100px;
+    bottom: 100px;
+    width: 200px;
+    height: 400px;
+    background-color: brown;
+    display: none;
+}
+
+.player_text_area{
+    left: 300px;
+    top: -20px;
+    width: 400px;
+    height: 100px;
+    background-color: cyan;
+    border-radius: 10px;
+    display: none;
+}
+
+.player_text{
+    display: none;
+}
+
+.typing{
+    display: inline-block;
+    left: 20px;
+    top: 10px;
+    font-size: 30px;
+}
+
+.normal{
+    font-family: 'normal'; 
+}
+
+.afraid{
+    font-family: 'afraid';
+}
+
+.next_text {  
+    display: none;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid black;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    animation-name: cursor; 
+    animation-duration: 2s; 
+    animation-iteration-count: infinite; 
+} 
+@keyframes cursor{ 
+    0%{bottom: 0px;} 
+    50%{bottom: 10px;} 
+    100%{bottom: 0px;} 
+}
