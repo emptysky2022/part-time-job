@@ -8,6 +8,13 @@
     src: url('../fonts/HiMelody-Regular.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'fontello';
+    src: url('../fonts/fontello.ttf?86838168') format('truetype');
+    /* font-weight: normal; */
+    /* font-style: normal; */
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -24,6 +31,12 @@ body{
     height: 100%;
     background-color: gray;
     background-image: url("../images/front.png");
+    user-select: none;
+}
+
+.demo-icon{
+    font-family: "fontello";
+    font-size: 200%;
 }
 
 .desk{
