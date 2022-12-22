@@ -10,7 +10,7 @@
 
 @font-face {
     font-family: 'fontello';
-    src: url('../fonts/fontello.ttf?86838168') format('truetype');
+    src: url('../fonts/fontello.ttf?5067207') format('truetype');
     /* font-weight: normal; */
     /* font-style: normal; */
 }
@@ -33,10 +33,23 @@ body{
     background-image: url("../images/front.png");
     user-select: none;
 }
-
-.demo-icon{
+.moved-icon{
+    font-family: "fontello";
+    font-size: 300%;
+    color: black;
+    animation: alert;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.in-icon{
     font-family: "fontello";
     font-size: 200%;
+    color: white;
+}
+.search-icon{
+    font-family: "fontello";
+    font-size: 275%;
+    color: black;
 }
 
 .desk{
@@ -46,6 +59,7 @@ body{
     height: 10px;
     background-color: aliceblue;
 }
+
 .bag{
     left: 800px;
     bottom: 100px;
@@ -53,9 +67,44 @@ body{
     height: 10px;
     background-color: aquamarine;
 }
+
+.office-top{
+    left: 1045px;
+    top: 200px;
+}
+
+.meeting-room-top{
+    left: 1190px;
+    top: 80px;
+}
+
+.office-center{
+    left: 1040px;
+    top: 350px;
+}
+
+.meeting-room-center{
+    left: 1190px;
+    top: 300px;
+}
+
+.drawer1{
+    left: 360px;
+    top: 350px;
+}
+.drawer2{
+    left: 540px;
+    top: 350px;
+}
+.drawer3{
+    left: 700px;
+    top: 350px;
+}
+
 .dialog{
     visibility: hidden;
 }
+
 .player{
     left: 100px;
     bottom: 100px;
@@ -111,4 +160,9 @@ body{
     0%{bottom: 0px;} 
     50%{bottom: 10px;} 
     100%{bottom: 0px;} 
+}
+@keyframes alert {
+    0%{top: 0px;}
+    50%{top: 10px;}
+    100%{top: 0px;}
 }
